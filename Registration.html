@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function subfun(){
+                alert("the form was submitted successfully");
+            }
+        </script>
+        <style>
+            .formclass{
+                background-color: aquamarine;
+                border: 10px 30px;
+                border-radius: 2px ;
+
+            }
+        </style>
+       
+    </head>
+<body>
+    <div class="formclass">
+
+
+
+   
+
+  <form onsubmit="return  subfun();"action="" method="post">
+    
+    <p>
+        <label>First name: <input name="firstName" /></label>
+      </p>
+ 
+ 
+       
+ 
+<p>
+        <label>Last name: <input name="lastName" /></label>
+      </p>
+ 
+ 
+       
+ 
+<p>
+        Gender :
+        <label><input type="radio" name="gender" value="male" /> Male</label>
+        <label><input type="radio" name="gender" value="female" /> Female</label>
+      </p>
+ 
+ 
+       
+ 
+<p>
+        <label>Email:<input type="email" name="email" /></label>
+      </p>
+
+     
+      <label for="Location">Choose a Location:</label>
+
+<select name="Location" id="Locations">
+  <option value="Mumbai">Mumbai</option>
+  <option value="Pune">Pune</option>
+  
+</select>
+<br>
+Software Knowledge: <br>    
+              <input type="checkbox" id="C" name="C" value="C"/>    
+                 <label>C</label> <br>    
+              <input type="checkbox" id="Java" name="Java" value="Java" checked=?yes?/>    
+                 <label>Java</label> <br>    
+              <input type="checkbox" id="Python" name="Python" value="Python"/>    
+                 <label>Python</label> <br>  
+         <input type="checkbox" id="PHP" name="PHP" value="PHP"/>    
+                 <label>PHP</label>  
+ 
+
+ 
+ 
+       
+ 
+<p>
+        <label>
+         Remarks :
+          <br />
+          <textarea name="Remarks" cols="30" rows="3"></textarea>
+        </label>
+      </p>
+ 
+ 
+       
+ 
+<p>
+        <button type="submit">Submit</button>
+      </p>
+ 
+ 
+</form>
+</div>
+ 
+</body>
+</html>
