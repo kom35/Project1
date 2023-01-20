@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script>
-            function subfun(){
-                alert("the form was submitted successfully");
-            }
-        </script>
         <style>
             .formclass{
-                background-color: aquamarine;
+                background-color: rgb(224, 165, 56);
                 border: 10px 30px;
                 border-radius: 2px ;
+                max-width: 80vh;
+                border-color: black;
+                border-radius: 6px;
 
             }
         </style>
        
+       <script>
+        function subfun(){
+            alert("the form was submitted successfully");
+            
+        }
+        
+        function func3() {
+          // alert("Hey")
+          if(form.firstName.value==""){
+            return false
+          }
+        alert(
+            `Selected Values are:
+                First_Name: ${form.firstName.value}
+                Second_Name: ${form.lastName.value}
+                Email:${form.email.value}
+                
+                
+
+
+
+                `
+        )
+    }
+    </script>
     </head>
 <body>
     <div class="formclass">
@@ -23,10 +46,10 @@
 
    
 
-  <form onsubmit="return  subfun();"action="" method="post">
+  <form name="form" onsubmit="func3()" action="thanks.html">
     
     <p>
-        <label>First name: <input name="firstName" /></label>
+        <label>First name: <input name="firstName" required/></label>
       </p>
  
  
@@ -49,7 +72,7 @@
        
  
 <p>
-        <label>Email:<input type="email" name="email" /></label>
+        <label>Email:<input type="email" name="email" required/></label>
       </p>
 
      
@@ -85,11 +108,9 @@ Software Knowledge: <br>
       </p>
  
  
-       
- 
-<p>
-        <button type="submit">Submit</button>
-      </p>
+     
+        <input type="submit" value="submit">
+     
  
  
 </form>
